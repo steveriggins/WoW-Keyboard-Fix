@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DC2662136DD788007900D1 /* Info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 00DC2661136DD788007900D1 /* Info.rtf */; };
+		00DC266E136DDA14007900D1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 00DC266D136DDA14007900D1 /* README */; };
 		00DF86A4136CEB6800C0CEFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DF86A3136CEB6800C0CEFF /* Cocoa.framework */; };
 		00DF86AE136CEB6800C0CEFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00DF86AC136CEB6800C0CEFF /* InfoPlist.strings */; };
 		00DF86B1136CEB6800C0CEFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF86B0136CEB6800C0CEFF /* main.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00DC2661136DD788007900D1 /* Info.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Info.rtf; sourceTree = "<group>"; };
+		00DC266D136DDA14007900D1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		00DF869F136CEB6800C0CEFF /* WoW Keyboard Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW Keyboard Fix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DF86A3136CEB6800C0CEFF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		00DF86A6136CEB6800C0CEFF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,6 +50,7 @@
 		00DF8694136CEB6800C0CEFF = {
 			isa = PBXGroup;
 			children = (
+				00DC266D136DDA14007900D1 /* README */,
 				00DF86A9136CEB6800C0CEFF /* WoW Keyboard Fix */,
 				00DF86A2136CEB6800C0CEFF /* Frameworks */,
 				00DF86A0136CEB6800C0CEFF /* Products */,
@@ -98,6 +103,7 @@
 				00DF86AF136CEB6800C0CEFF /* WoW Keyboard Fix-Prefix.pch */,
 				00DF86B0136CEB6800C0CEFF /* main.m */,
 				00DF86B2136CEB6800C0CEFF /* Credits.rtf */,
+				00DC2661136DD788007900D1 /* Info.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				00DF86AE136CEB6800C0CEFF /* InfoPlist.strings in Resources */,
 				00DF86B4136CEB6800C0CEFF /* Credits.rtf in Resources */,
 				00DF86BA136CEB6800C0CEFF /* MainMenu.xib in Resources */,
+				00DC2662136DD788007900D1 /* Info.rtf in Resources */,
+				00DC266E136DDA14007900D1 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +220,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -227,7 +235,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -242,6 +250,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WoW Keyboard Fix/WoW Keyboard Fix-Prefix.pch";
 				INFOPLIST_FILE = "WoW Keyboard Fix/WoW Keyboard Fix-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -257,6 +266,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WoW Keyboard Fix/WoW Keyboard Fix-Prefix.pch";
 				INFOPLIST_FILE = "WoW Keyboard Fix/WoW Keyboard Fix-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +291,7 @@
 				00DF86BF136CEB6800C0CEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

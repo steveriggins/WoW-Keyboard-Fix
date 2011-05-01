@@ -11,10 +11,12 @@
 @private
     NSWindow *window;
     NSTextField *statusField;
+    NSTextView *infoTextView;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField *statusField;
+@property (assign) IBOutlet NSTextView *infoTextView;
 
 -(void)installTap;
 

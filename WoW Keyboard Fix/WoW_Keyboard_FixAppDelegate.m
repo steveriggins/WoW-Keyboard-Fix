@@ -9,17 +9,50 @@
 #import "WoW_Keyboard_FixAppDelegate.h"
 
 static NSTextField *gStatusField = nil;
+static CFMachPortRef	  gEventTap;
+static WoW_Keyboard_FixAppDelegate* APPDELEGATE = nil;
+
+@interface WoW_Keyboard_FixAppDelegate ()
+-(void)applyInfoText;
+-(void)appendString:(NSString*)string;
+@end
 
 @implementation WoW_Keyboard_FixAppDelegate
 
 @synthesize window;
 @synthesize statusField;
+@synthesize infoTextView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
     gStatusField = self.statusField;
+    APPDELEGATE = self;
+    [self applyInfoText];
     [self installTap];
+}
+
+-(void)applyInfoText {
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Info" withExtension:@"rtf"];
+    NSString *path = [modelURL path];
+    [self.infoTextView readRTFDFromFile:path];
+}
+
+-(void)appendString:(NSString*)string {
+	
+	NSAttributedString *attribString = [[NSAttributedString alloc] initWithString:string];
+	NSTextStorage *storage = [infoTextView textStorage];
+	
+	[storage beginEditing];
+	[storage appendAttributedString:attribString];
+	[storage endEditing];
+
+}
+
+-(void)dealloc {
+    [statusField release];
+    [infoTextView release];
+    [super dealloc];
 }
 
 // alterkeys.c
@@ -48,6 +81,12 @@ CGEventRef
 myCGEventCallback(CGEventTapProxy proxy, CGEventType type,
 				  CGEventRef event, void *refcon)
 {
+    
+    if (type==kCGEventTapDisabledByTimeout) {
+        [APPDELEGATE appendString: @"Event tap disabled.  Reenabling.\r"];
+        NSLog(@"Event tap disabled.  Reenabling.");
+        CGEventTapEnable(gEventTap, YES);
+    }
 	// Paranoid sanity check.
 	if ((type != kCGEventKeyDown) && (type != kCGEventKeyUp) && (type != kCGEventFlagsChanged))
 		return event;
@@ -112,29 +151,28 @@ myCGEventCallback(CGEventTapProxy proxy, CGEventType type,
 }
 
 -(void)installTap {
-	CFMachPortRef	  eventTap;
 	CGEventMask		eventMask;
 	CFRunLoopSourceRef runLoopSource;
     
 	// Create an event tap. We are interested in key presses.
 	eventMask = ((1 << kCGEventKeyDown) | (1 << kCGEventKeyUp) | (1 << kCGEventFlagsChanged));
-	eventTap = CGEventTapCreate(kCGSessionEventTap, kCGHeadInsertEventTap, 0,
+	gEventTap = CGEventTapCreate(kCGSessionEventTap, kCGHeadInsertEventTap, 0,
 								eventMask, myCGEventCallback, NULL);
-	if (!eventTap) {
+	if (!gEventTap) {
 		fprintf(stderr, "failed to create event tap\n");
 		exit(1);
 	}
     
 	// Create a run loop source.
 	runLoopSource = CFMachPortCreateRunLoopSource(
-                                                  kCFAllocatorDefault, eventTap, 0);
+                                                  kCFAllocatorDefault, gEventTap, 0);
     
 	// Add to the current run loop.
 	CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource,
 					   kCFRunLoopCommonModes);
     
 	// Enable the event tap.
-	CGEventTapEnable(eventTap, true);
+	CGEventTapEnable(gEventTap, true);
     
 	// Set it all running.
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
