@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00DF86A4136CEB6800C0CEFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DF86A3136CEB6800C0CEFF /* Cocoa.framework */; };
+		00DF86AE136CEB6800C0CEFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00DF86AC136CEB6800C0CEFF /* InfoPlist.strings */; };
+		00DF86B1136CEB6800C0CEFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF86B0136CEB6800C0CEFF /* main.m */; };
+		00DF86B4136CEB6800C0CEFF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 00DF86B2136CEB6800C0CEFF /* Credits.rtf */; };
+		00DF86B7136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF86B6136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.m */; };
+		00DF86BA136CEB6800C0CEFF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DF86B8136CEB6800C0CEFF /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DF869F136CEB6800C0CEFF /* WoW Keyboard Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW Keyboard Fix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DF86A3136CEB6800C0CEFF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		00DF86A6136CEB6800C0CEFF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		00DF86A7136CEB6800C0CEFF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		00DF86A8136CEB6800C0CEFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00DF86AB136CEB6800C0CEFF /* WoW Keyboard Fix-Info.plist */ = {isa = PBXFileReference; path = "WoW Keyboard Fix-Info.plist"; sourceTree = "<group>"; };
+		00DF86AD136CEB6800C0CEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00DF86AF136CEB6800C0CEFF /* WoW Keyboard Fix-Prefix.pch */ = {isa = PBXFileReference; path = "WoW Keyboard Fix-Prefix.pch"; sourceTree = "<group>"; };
+		00DF86B0136CEB6800C0CEFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00DF86B3136CEB6800C0CEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		00DF86B5136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.h */ = {isa = PBXFileReference; path = WoW_Keyboard_FixAppDelegate.h; sourceTree = "<group>"; };
+		00DF86B6136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoW_Keyboard_FixAppDelegate.m; sourceTree = "<group>"; };
+		00DF86B9136CEB6800C0CEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00DF869C136CEB6800C0CEFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF86A4136CEB6800C0CEFF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00DF8694136CEB6800C0CEFF = {
+			isa = PBXGroup;
+			children = (
+				00DF86A9136CEB6800C0CEFF /* WoW Keyboard Fix */,
+				00DF86A2136CEB6800C0CEFF /* Frameworks */,
+				00DF86A0136CEB6800C0CEFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00DF86A0136CEB6800C0CEFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00DF869F136CEB6800C0CEFF /* WoW Keyboard Fix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00DF86A2136CEB6800C0CEFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00DF86A3136CEB6800C0CEFF /* Cocoa.framework */,
+				00DF86A5136CEB6800C0CEFF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00DF86A5136CEB6800C0CEFF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00DF86A6136CEB6800C0CEFF /* AppKit.framework */,
+				00DF86A7136CEB6800C0CEFF /* CoreData.framework */,
+				00DF86A8136CEB6800C0CEFF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		00DF86A9136CEB6800C0CEFF /* WoW Keyboard Fix */ = {
+			isa = PBXGroup;
+			children = (
+				00DF86B5136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.h */,
+				00DF86B6136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.m */,
+				00DF86B8136CEB6800C0CEFF /* MainMenu.xib */,
+				00DF86AA136CEB6800C0CEFF /* Supporting Files */,
+			);
+			path = "WoW Keyboard Fix";
+			sourceTree = "<group>";
+		};
+		00DF86AA136CEB6800C0CEFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00DF86AB136CEB6800C0CEFF /* WoW Keyboard Fix-Info.plist */,
+				00DF86AC136CEB6800C0CEFF /* InfoPlist.strings */,
+				00DF86AF136CEB6800C0CEFF /* WoW Keyboard Fix-Prefix.pch */,
+				00DF86B0136CEB6800C0CEFF /* main.m */,
+				00DF86B2136CEB6800C0CEFF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00DF869E136CEB6800C0CEFF /* WoW Keyboard Fix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DF86BD136CEB6800C0CEFF /* Build configuration list for PBXNativeTarget "WoW Keyboard Fix" */;
+			buildPhases = (
+				00DF869B136CEB6800C0CEFF /* Sources */,
+				00DF869C136CEB6800C0CEFF /* Frameworks */,
+				00DF869D136CEB6800C0CEFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WoW Keyboard Fix";
+			productName = "WoW Keyboard Fix";
+			productReference = 00DF869F136CEB6800C0CEFF /* WoW Keyboard Fix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00DF8696136CEB6800C0CEFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Geeks R Us";
+			};
+			buildConfigurationList = 00DF8699136CEB6800C0CEFF /* Build configuration list for PBXProject "WoW Keyboard Fix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00DF8694136CEB6800C0CEFF;
+			productRefGroup = 00DF86A0136CEB6800C0CEFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00DF869E136CEB6800C0CEFF /* WoW Keyboard Fix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00DF869D136CEB6800C0CEFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF86AE136CEB6800C0CEFF /* InfoPlist.strings in Resources */,
+				00DF86B4136CEB6800C0CEFF /* Credits.rtf in Resources */,
+				00DF86BA136CEB6800C0CEFF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DF869B136CEB6800C0CEFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DF86B1136CEB6800C0CEFF /* main.m in Sources */,
+				00DF86B7136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00DF86AC136CEB6800C0CEFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DF86AD136CEB6800C0CEFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00DF86B2136CEB6800C0CEFF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DF86B3136CEB6800C0CEFF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		00DF86B8136CEB6800C0CEFF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DF86B9136CEB6800C0CEFF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00DF86BB136CEB6800C0CEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		00DF86BC136CEB6800C0CEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		00DF86BE136CEB6800C0CEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WoW Keyboard Fix/WoW Keyboard Fix-Prefix.pch";
+				INFOPLIST_FILE = "WoW Keyboard Fix/WoW Keyboard Fix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00DF86BF136CEB6800C0CEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WoW Keyboard Fix/WoW Keyboard Fix-Prefix.pch";
+				INFOPLIST_FILE = "WoW Keyboard Fix/WoW Keyboard Fix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00DF8699136CEB6800C0CEFF /* Build configuration list for PBXProject "WoW Keyboard Fix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DF86BB136CEB6800C0CEFF /* Debug */,
+				00DF86BC136CEB6800C0CEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DF86BD136CEB6800C0CEFF /* Build configuration list for PBXNativeTarget "WoW Keyboard Fix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DF86BE136CEB6800C0CEFF /* Debug */,
+				00DF86BF136CEB6800C0CEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00DF8696136CEB6800C0CEFF /* Project object */;
+}

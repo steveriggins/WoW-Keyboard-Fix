@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WoW Keyboard Fix' target in the 'WoW Keyboard Fix' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
