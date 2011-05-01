@@ -21,12 +21,12 @@
 		00DF86A6136CEB6800C0CEFF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		00DF86A7136CEB6800C0CEFF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		00DF86A8136CEB6800C0CEFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		00DF86AB136CEB6800C0CEFF /* WoW Keyboard Fix-Info.plist */ = {isa = PBXFileReference; path = "WoW Keyboard Fix-Info.plist"; sourceTree = "<group>"; };
+		00DF86AB136CEB6800C0CEFF /* WoW Keyboard Fix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WoW Keyboard Fix-Info.plist"; sourceTree = "<group>"; };
 		00DF86AD136CEB6800C0CEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		00DF86AF136CEB6800C0CEFF /* WoW Keyboard Fix-Prefix.pch */ = {isa = PBXFileReference; path = "WoW Keyboard Fix-Prefix.pch"; sourceTree = "<group>"; };
+		00DF86AF136CEB6800C0CEFF /* WoW Keyboard Fix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WoW Keyboard Fix-Prefix.pch"; sourceTree = "<group>"; };
 		00DF86B0136CEB6800C0CEFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00DF86B3136CEB6800C0CEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		00DF86B5136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.h */ = {isa = PBXFileReference; path = WoW_Keyboard_FixAppDelegate.h; sourceTree = "<group>"; };
+		00DF86B5136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WoW_Keyboard_FixAppDelegate.h; sourceTree = "<group>"; };
 		00DF86B6136CEB6800C0CEFF /* WoW_Keyboard_FixAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoW_Keyboard_FixAppDelegate.m; sourceTree = "<group>"; };
 		00DF86B9136CEB6800C0CEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
