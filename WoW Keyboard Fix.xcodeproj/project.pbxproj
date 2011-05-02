@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00BDE38F136E913600578153 /* wow_keyboard_fix.icns in Resources */ = {isa = PBXBuildFile; fileRef = 00BDE38E136E913600578153 /* wow_keyboard_fix.icns */; };
 		00DC2662136DD788007900D1 /* Info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 00DC2661136DD788007900D1 /* Info.rtf */; };
 		00DC266E136DDA14007900D1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 00DC266D136DDA14007900D1 /* README */; };
 		00DF86A4136CEB6800C0CEFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DF86A3136CEB6800C0CEFF /* Cocoa.framework */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00BDE38E136E913600578153 /* wow_keyboard_fix.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = wow_keyboard_fix.icns; sourceTree = "<group>"; };
 		00DC2661136DD788007900D1 /* Info.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Info.rtf; sourceTree = "<group>"; };
 		00DC266D136DDA14007900D1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		00DF869F136CEB6800C0CEFF /* WoW Keyboard Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW Keyboard Fix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 		00DF86AA136CEB6800C0CEFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00BDE38E136E913600578153 /* wow_keyboard_fix.icns */,
 				00DF86AB136CEB6800C0CEFF /* WoW Keyboard Fix-Info.plist */,
 				00DF86AC136CEB6800C0CEFF /* InfoPlist.strings */,
 				00DF86AF136CEB6800C0CEFF /* WoW Keyboard Fix-Prefix.pch */,
@@ -163,6 +166,7 @@
 				00DF86BA136CEB6800C0CEFF /* MainMenu.xib in Resources */,
 				00DC2662136DD788007900D1 /* Info.rtf in Resources */,
 				00DC266E136DDA14007900D1 /* README in Resources */,
+				00BDE38F136E913600578153 /* wow_keyboard_fix.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
